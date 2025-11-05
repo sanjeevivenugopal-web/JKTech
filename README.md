@@ -12,23 +12,24 @@ Launch the browser and navigate to http://localhost:3333 and see if the applicat
 
 Add JMeter/Bin to path environment variable.  
 
-replace the user.properties file imn JMeter\bin folder.  
-It has got 4 types of tests  
+Replace the user.properties file imn JMeter\bin folder.  
+The user.properties file has got 4 types of tests listed below, choose the test you want to run.  
 1. Dry run  
 2. Load test  
 3. Stress test  
 4. Endurance test  
 
 #Test Execution  
-uncomment any one test type and keep other test types commented (IMPORTANT)  
-run the following command and observe the results  
-jmeter -n -t quickpizza.jmx -l quickpizza.jtl -e -o Reports  
+Uncomment any one test type and keep other test types commented (IMPORTANT)  
+Runn the following command and observe the results  
+  jmeter -n -t quickpizza.jmx -l quickpizza.jtl -e -o Reports  
 after every run run the following command  
-del quickpizza.jtl  
-rmdir /q /s Reports  
+  del quickpizza.jtl  
+  rmdir /q /s Reports  
 
 
 #Monitoring Results in Grafana  
 Launch the browser  
 navigate to http://localhost:3000  
+Move to drilldown section on left pane.    
 it will show the results for monitoring.  
