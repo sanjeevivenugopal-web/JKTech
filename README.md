@@ -10,6 +10,8 @@ docker run --rm -it -p 3333:3333 $(docker build -q .)
 
 Launch the browser and navigate to http://localhost:3333 and see if the application is up and running
 
+Add JMeter/Bin to path environment variable.
+
 replace the user.properties file imn JMeter\bin folder.
 It has got 4 types of tests
 1. Dry run
