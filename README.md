@@ -1,9 +1,10 @@
 # JKTech
 
-Install JMeter
-Install Docker Desktop
-login to docker account, and pull github code from https://github.com/grafana/quickpizza.git.
-Run the following commands from the quickpizza folder
+Step 1:- Install JMeter
+Step 2:- Install Docker Desktop
+Step 3:- login to docker account, and pull github code from https://github.com/grafana/quickpizza.git.
+Step 4:- Run the following commands from the quickpizza folder downloaded from github:
+
 docker run --rm -it -p 3333:3333  ghcr.io/grafana/quickpizza-local:latest
 docker run --rm -it -p 3333:3333 $(docker build -q .)
 
